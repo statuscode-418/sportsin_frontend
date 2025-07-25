@@ -337,7 +337,7 @@ export default function UltraPremiumLandingPage() {
             <div>
               <span className="text-xl md:text-2xl font-bold text-white tracking-tight">SportsIn</span>
               <div className="flex items-center space-x-2">
-                <div className="text-[10px] md:text-xs text-red-400 font-bold tracking-[0.2em]">PREMIUM</div>
+
                 <Badge className="bg-red-500/20 text-red-400 text-[8px] md:text-[10px] px-1.5 md:px-2 py-0.5 border-red-500/30">
                   LOREM IPSUM
                 </Badge>
