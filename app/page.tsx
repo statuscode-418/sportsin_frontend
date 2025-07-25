@@ -1099,18 +1099,47 @@ export default function UltraPremiumLandingPage() {
               ULTRA-PREMIUM CTA
             </Badge>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 md:mb-8 tracking-tight">
-              Ready to Experience the Future?
+              Lorem Ipsum Dolor Sit Amet
             </h2>
             <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed mb-8">
-              Join the ultra-premium revolution and elevate your sports executive journey with SportsIn. Sign up now to get early access and exclusive benefits.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur
+              consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit.
             </p>
-            <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white text-base md:text-xl px-8 md:px-12 py-6 md:py-8 font-bold shadow-2xl border border-red-500/30">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white text-base md:text-xl px-8 md:px-12 py-6 md:py-8 font-bold shadow-2xl border border-red-500/30"
+            >
               <ArrowRight className="w-5 h-5 md:w-6 md:h-6 mr-3 md:mr-4" />
-              Get Early Access
+              Lorem Ipsum CTA
             </Button>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-black border-t border-red-500/20 py-10 md:py-16 text-gray-400">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex items-center space-x-3 md:space-x-4">
+            <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-red-600 via-red-500 to-red-700 rounded-2xl flex items-center justify-center shadow-2xl border border-red-400/30">
+              <Crown className="w-6 h-6 md:w-7 md:h-7 text-white" />
+            </div>
+            <span className="text-lg md:text-xl font-bold text-white tracking-tight">SportsIn</span>
+          </div>
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+            <nav className="flex space-x-6 text-sm md:text-base">
+              <a href="#platform" className="hover:text-red-400 transition-colors">Platform</a>
+              <a href="#intelligence" className="hover:text-red-400 transition-colors">Intelligence</a>
+              <a href="#download" className="hover:text-red-400 transition-colors">Download</a>
+              <a href="#advisory" className="hover:text-red-400 transition-colors">Advisory</a>
+            </nav>
+            <div className="text-xs md:text-sm text-gray-500 mt-2 md:mt-0">Contact: <a href="mailto:info@sportsin.com" className="hover:text-red-400 underline">info@sportsin.com</a></div>
+          </div>
+          <div className="text-sm md:text-base text-gray-400 text-center md:text-right">
+            © {new Date().getFullYear()} SportsIn. All rights reserved.
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
