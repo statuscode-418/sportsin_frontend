@@ -1,0 +1,81 @@
+
+@import "tailwindcss";
+
+@theme {
+  --color-background: oklch(0 0% 0%);
+  --color-foreground: oklch(0 0% 100%);
+  --color-card: oklch(0 0% 5%);
+  --color-card-foreground: oklch(0 0% 100%);
+  --color-popover: oklch(0 0% 5%);
+  --color-popover-foreground: oklch(0 0% 100%);
+  --color-primary: oklch(0 84% 60%);
+  --color-primary-foreground: oklch(0 0% 100%);
+  --color-secondary: oklch(0 0% 10%);
+  --color-secondary-foreground: oklch(0 0% 100%);
+  --color-muted: oklch(0 0% 10%);
+  --color-muted-foreground: oklch(0 0% 70%);
+  --color-accent: oklch(0 84% 60%);
+  --color-accent-foreground: oklch(0 0% 100%);
+  --color-destructive: oklch(0 84% 60%);
+  --color-destructive-foreground: oklch(0 0% 100%);
+  --color-border: oklch(0 0% 15%);
+  --color-input: oklch(0 0% 15%);
+  --color-ring: oklch(0 84% 60%);
+  --radius-default: 0.75rem;
+}
+
+@layer base {
+  /* Define the custom border-border utility class */
+  .border-border {
+    border-width: 1px;
+    border-color: hsl(var(--color-border));
+  }
+
+  *, ::before, ::after {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #000000 100%);
+  }
+}
+
+@layer components {
+  .premium-gradient {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 50%, #991b1b 100%);
+  }
+  .premium-text-gradient {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 50%, #b91c1b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .premium-border {
+    border: 1px solid rgba(239, 68, 68, 0.3);
+  }
+  .premium-shadow {
+    box-shadow: 0 25px 50px -12px rgba(220, 38, 38, 0.25);
+  }
+  .premium-glow {
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #dc2626;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b91c1c;
+}
+::selection {
+  background: rgba(239, 68, 68, 0.3);
+  color: white;
+}
