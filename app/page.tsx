@@ -25,8 +25,6 @@ import {
   Award,
   Building,
   UserCheck,
-  Briefcase,
-  ChevronRight,
   Download,
   Menu,
   X,
@@ -112,7 +110,7 @@ export default function UltraPremiumLandingPage() {
         const particles = particlesRef.current.children
         gsap.set(particles, { opacity: 0.1 })
 
-        Array.from(particles).forEach((particle, i) => {
+        Array.from(particles).forEach((particle) => {
           gsap.to(particle, {
             y: -100,
             x: Math.random() * 100 - 50,
@@ -968,8 +966,8 @@ export default function UltraPremiumLandingPage() {
                   </div>
                 </div>
                 <p className="text-base md:text-lg text-gray-300 italic leading-relaxed font-light">
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                  &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.&quot;
                 </p>
               </CardContent>
             </Card>
@@ -998,8 +996,8 @@ export default function UltraPremiumLandingPage() {
                   </div>
                 </div>
                 <p className="text-base md:text-lg text-gray-300 italic leading-relaxed font-light">
-                  "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                  voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                  &quot;Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur.&quot;
                 </p>
               </CardContent>
             </Card>
@@ -1028,8 +1026,8 @@ export default function UltraPremiumLandingPage() {
                   </div>
                 </div>
                 <p className="text-base md:text-lg text-gray-300 italic leading-relaxed font-light">
-                  "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                  laborum. Sed ut perspiciatis unde omnis iste natus error."
+                  &quot;Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                  laborum. Sed ut perspiciatis unde omnis iste natus error.&quot;
                 </p>
               </CardContent>
             </Card>
@@ -1045,7 +1043,7 @@ export default function UltraPremiumLandingPage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-500/15 via-transparent to-transparent"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center mb-16 md:mb-20">
-            <Badge className="bg-gradient-to-r from-red-500/30 to-red-600/30 text-red-300 border-red-400/40 hover:bg-gradient-to-r hover:from-red-500/30 hover:to-red-600/30 mb-6 md:mb-8 px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-semibold tracking-wide">
+            <Badge className="bg-gradient-to-r from-red-500/30 to-red-600/30 text-red-300 border-red-400/40 hover:bg-gradient-to-r hover:from-red-500/30 hover:to-red-600/30 mb-6 md:mb-8 px-4 md:px-6 py-2 md:py-4 text-xs md:text-sm font-semibold tracking-wide">
               <Award className="w-3 h-3 md:w-4 md:h-4 mr-2 md:mr-3" />
               LOREM IPSUM METRICS
             </Badge>
@@ -1093,184 +1091,26 @@ export default function UltraPremiumLandingPage() {
 
       {/* Ultra-Premium CTA Section */}
       <section ref={ctaRef} className="py-24 md:py-40 bg-gradient-to-b from-black to-gray-950 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-500/10 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-500/15 via-transparent to-transparent"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="ultra-premium-cta max-w-6xl mx-auto text-center">
-            <Badge className="bg-gradient-to-r from-red-500/30 to-red-600/30 text-red-300 border-red-400/40 hover:bg-gradient-to-r hover:from-red-500/30 hover:to-red-600/30 mb-8 md:mb-12 px-6 md:px-8 py-2 md:py-4 text-sm md:text-base font-bold tracking-wide">
-              <Lock className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3" />
-              LOREM IPSUM DOLOR SIT
+          <div className="ultra-premium-cta text-center max-w-3xl mx-auto">
+            <Badge className="bg-gradient-to-r from-red-500/30 to-red-600/30 text-red-300 border-red-400/40 hover:bg-gradient-to-r hover:from-red-500/30 hover:to-red-600/30 mb-6 md:mb-8 px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-semibold tracking-wide">
+              <Crown className="w-3 h-3 md:w-4 md:h-4 mr-2 md:mr-3" />
+              ULTRA-PREMIUM CTA
             </Badge>
-            <h2 className="text-5xl md:text-7xl font-bold text-white mb-8 md:mb-12 tracking-tight">
-              Consectetur Adipiscing Elite
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 md:mb-8 tracking-tight">
+              Ready to Experience the Future?
             </h2>
-            <p className="text-xl md:text-3xl text-gray-300 mb-12 md:mb-16 max-w-4xl mx-auto font-light leading-relaxed">
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure.
+            <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed mb-8">
+              Join the ultra-premium revolution and elevate your sports executive journey with SportsIn. Sign up now to get early access and exclusive benefits.
             </p>
-
-            <div className="flex flex-col sm:flex-row gap-6 md:gap-8 justify-center items-center mb-16 md:mb-20">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white text-xl md:text-2xl px-10 md:px-16 py-8 md:py-10 font-bold shadow-2xl border border-red-500/30 group w-full sm:w-auto"
-              >
-                <Diamond className="w-6 h-6 md:w-7 md:h-7 mr-3 md:mr-4 group-hover:rotate-12 transition-transform" />
-                Lorem Ipsum Dolor
-              </Button>
-              <div className="flex items-center space-x-3 md:space-x-4 text-gray-300">
-                <div className="flex text-red-400">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 md:w-7 md:h-7 fill-current" />
-                  ))}
-                </div>
-                <span className="font-bold text-xl md:text-2xl">4.9/5</span>
-                <span className="text-gray-400 text-base md:text-lg">• Lorem Reviews</span>
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 md:gap-16">
-              <div className="text-center">
-                <div className="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl md:rounded-3xl flex items-center justify-center mx-auto mb-6 md:mb-8 shadow-2xl border border-red-400/30">
-                  <Shield className="w-8 h-8 md:w-12 md:h-12 text-white" />
-                </div>
-                <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Lorem Ipsum Dolor</h3>
-                <p className="text-base md:text-lg text-gray-300 font-light leading-relaxed">
-                  Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
-                  ad minim veniam
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-r from-red-600 to-red-700 rounded-2xl md:rounded-3xl flex items-center justify-center mx-auto mb-6 md:mb-8 shadow-2xl border border-red-500/30">
-                  <Briefcase className="w-8 h-8 md:w-12 md:h-12 text-white" />
-                </div>
-                <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Consectetur Adipiscing</h3>
-                <p className="text-base md:text-lg text-gray-300 font-light leading-relaxed">
-                  Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure
-                  dolor in reprehenderit
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 md:w-24 md:h-24 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl md:rounded-3xl flex items-center justify-center mx-auto mb-6 md:mb-8 shadow-2xl border border-red-400/30">
-                  <Trophy className="w-8 h-8 md:w-12 md:h-12 text-white" />
-                </div>
-                <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4">Sed Do Eiusmod</h3>
-                <p className="text-base md:text-lg text-gray-300 font-light leading-relaxed">
-                  Tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation
-                  ullamco laboris
-                </p>
-              </div>
-            </div>
+            <Button size="lg" className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white text-base md:text-xl px-8 md:px-12 py-6 md:py-8 font-bold shadow-2xl border border-red-500/30">
+              <ArrowRight className="w-5 h-5 md:w-6 md:h-6 mr-3 md:mr-4" />
+              Get Early Access
+            </Button>
           </div>
         </div>
       </section>
-
-      {/* Ultra-Premium Footer */}
-      <footer className="bg-black border-t border-red-500/20 py-16 md:py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-10 md:gap-16">
-            <div className="lg:col-span-2">
-              <div className="flex items-center space-x-3 md:space-x-4 mb-6 md:mb-8">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-red-600 via-red-500 to-red-700 rounded-xl md:rounded-2xl flex items-center justify-center shadow-2xl border border-red-400/30">
-                  <Crown className="w-6 h-6 md:w-7 md:h-7 text-white" />
-                </div>
-                <div>
-                  <span className="text-xl md:text-2xl font-bold text-white tracking-tight">SportsIn</span>
-                  <div className="flex items-center space-x-2">
-                    <div className="text-[10px] md:text-xs text-red-400 font-bold tracking-[0.2em]">PREMIUM</div>
-                    <Badge className="bg-red-500/20 text-red-400 text-[8px] md:text-[10px] px-1.5 md:px-2 py-0.5 border-red-500/30">
-                      LOREM IPSUM
-                    </Badge>
-                  </div>
-                </div>
-              </div>
-              <p className="text-base md:text-lg text-gray-400 font-light leading-relaxed max-w-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-              </p>
-              <div className="flex space-x-4 md:space-x-6 mt-6 md:mt-8">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-gray-800 rounded-xl md:rounded-2xl flex items-center justify-center hover:bg-gray-700 transition-colors cursor-pointer border border-gray-700">
-                  <Globe className="w-5 h-5 md:w-6 md:h-6 text-gray-400" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-6 md:mb-8 text-base md:text-lg">Lorem Ipsum</h4>
-              <ul className="space-y-3 md:space-y-4 text-gray-400 font-light">
-                <li className="hover:text-red-400 transition-colors cursor-pointer flex items-center">
-                  <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
-                  Dolor Sit Amet
-                </li>
-                <li className="hover:text-red-400 transition-colors cursor-pointer flex items-center">
-                  <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
-                  Consectetur Elit
-                </li>
-                <li className="hover:text-red-400 transition-colors cursor-pointer flex items-center">
-                  <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
-                  Sed Do Eiusmod
-                </li>
-                <li className="hover:text-red-400 transition-colors cursor-pointer flex items-center">
-                  <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
-                  Tempor Incididunt
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-6 md:mb-8 text-base md:text-lg">Consectetur</h4>
-              <ul className="space-y-3 md:space-y-4 text-gray-400 font-light">
-                <li className="hover:text-red-400 transition-colors cursor-pointer flex items-center">
-                  <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
-                  Ut Labore Dolore
-                </li>
-                <li className="hover:text-red-400 transition-colors cursor-pointer flex items-center">
-                  <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
-                  Magna Aliqua
-                </li>
-                <li className="hover:text-red-400 transition-colors cursor-pointer flex items-center">
-                  <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
-                  Ut Enim Ad Minim
-                </li>
-                <li className="hover:text-red-400 transition-colors cursor-pointer flex items-center">
-                  <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
-                  Quis Nostrud
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-6 md:mb-8 text-base md:text-lg">Adipiscing</h4>
-              <ul className="space-y-3 md:space-y-4 text-gray-400 font-light">
-                <li className="hover:text-red-400 transition-colors cursor-pointer flex items-center">
-                  <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
-                  Exercitation Ullamco
-                </li>
-                <li className="hover:text-red-400 transition-colors cursor-pointer flex items-center">
-                  <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
-                  Laboris Nisi
-                </li>
-                <li className="hover:text-red-400 transition-colors cursor-pointer flex items-center">
-                  <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
-                  Ut Aliquip Ex
-                </li>
-                <li className="hover:text-red-400 transition-colors cursor-pointer flex items-center">
-                  <ChevronRight className="w-3 h-3 md:w-4 md:h-4 mr-1 md:mr-2" />
-                  Ea Commodo
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 mt-12 md:mt-16 pt-8 md:pt-12 flex flex-col lg:flex-row justify-between items-center">
-            <p className="text-base md:text-lg text-gray-500 font-light mb-6 lg:mb-0 text-center lg:text-left">
-              &copy; {new Date().getFullYear()} SportsIn Premium. Lorem ipsum dolor sit amet.
-            </p>
-            <div className="flex items-center space-x-4 md:space-x-8">
-              <span className="text-sm md:text-base text-gray-500">Lorem ipsum dolor sit amet consectetur</span>
-              <div className="flex text-red-400">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 md:w-5 md:h-5 fill-current" />
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
