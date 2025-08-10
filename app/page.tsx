@@ -339,41 +339,22 @@ export default function UltraPremiumLandingPage() {
               <div className="flex items-center space-x-2">
 
                 <Badge className="bg-red-500/20 text-red-400 text-[8px] md:text-[10px] px-1.5 md:px-2 py-0.5 border-red-500/30">
-                  LOREM IPSUM
+                  THE SPORTS CAREER NETWORK
                 </Badge>
               </div>
             </div>
           </div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation (only existing anchored sections) */}
           <nav className="hidden xl:flex items-center space-x-12">
-            <Link
-              href="#platform"
-              className="text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide"
-            >
-              Lorem Ipsum
-            </Link>
-            <Link
-              href="#intelligence"
-              className="text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide"
-            >
-              Dolor Sit
-            </Link>
-            <Link
-              href="#download"
-              className="text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide"
-            >
-              Download
-            </Link>
-            <Link
-              href="#advisory"
-              className="text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide"
-            >
-              Consectetur
-            </Link>
+            <Link href="#home" className="text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide">Home</Link>
+            <Link href="#platform" className="text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide">Platform</Link>
+            <Link href="#impact" className="text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide">Impact</Link>
+            <Link href="#testimonials" className="text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide">Testimonials</Link>
+            <Link href="#download" className="text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide">Download</Link>
             <Button className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold px-8 py-4 shadow-2xl border border-red-500/30">
               <Lock className="w-4 h-4 mr-2" />
-              Lorem Ipsum
+              Sign In
             </Button>
           </nav>
 
@@ -394,37 +375,14 @@ export default function UltraPremiumLandingPage() {
         {mobileMenuOpen && (
           <div className="xl:hidden bg-black/95 backdrop-blur-xl border-b border-red-500/20 shadow-2xl">
             <div className="container mx-auto px-4 py-6 space-y-4">
-              <Link
-                href="#platform"
-                className="block py-3 text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide border-b border-gray-800"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Lorem Ipsum
-              </Link>
-              <Link
-                href="#intelligence"
-                className="block py-3 text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide border-b border-gray-800"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Dolor Sit
-              </Link>
-              <Link
-                href="#download"
-                className="block py-3 text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide border-b border-gray-800"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Download
-              </Link>
-              <Link
-                href="#advisory"
-                className="block py-3 text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide border-b border-gray-800"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Consectetur
-              </Link>
+              <Link href="#home" className="block py-3 text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide border-b border-gray-800" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+              <Link href="#platform" className="block py-3 text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide border-b border-gray-800" onClick={() => setMobileMenuOpen(false)}>Platform</Link>
+              <Link href="#impact" className="block py-3 text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide border-b border-gray-800" onClick={() => setMobileMenuOpen(false)}>Impact</Link>
+              <Link href="#testimonials" className="block py-3 text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide border-b border-gray-800" onClick={() => setMobileMenuOpen(false)}>Testimonials</Link>
+              <Link href="#download" className="block py-3 text-gray-300 hover:text-red-400 transition-all duration-300 font-medium tracking-wide border-b border-gray-800" onClick={() => setMobileMenuOpen(false)}>Download</Link>
               <Button className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-4 shadow-2xl border border-red-500/30">
                 <Lock className="w-4 h-4 mr-2" />
-                Lorem Ipsum
+                Sign In
               </Button>
             </div>
           </div>
@@ -432,7 +390,7 @@ export default function UltraPremiumLandingPage() {
       </header>
 
       {/* Ultra-Premium Hero Section */}
-      <section ref={heroRef} className="pt-32 md:pt-40 pb-20 md:pb-32 px-4 sm:px-6 lg:px-8 relative">
+      <section id="home" ref={heroRef} className="pt-32 md:pt-40 pb-20 md:pb-32 px-4 sm:px-6 lg:px-8 relative">
         <div className="absolute inset-0 bg-gradient-to-r from-red-500/3 via-transparent to-red-600/3"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,_var(--tw-gradient-stops))] from-red-500/10 via-transparent to-transparent"></div>
 
@@ -442,19 +400,18 @@ export default function UltraPremiumLandingPage() {
               <div className="space-y-6 md:space-y-8">
                 <Badge className="hero-badge bg-gradient-to-r from-red-500/30 to-red-600/30 text-red-300 border-red-400/40 hover:bg-gradient-to-r hover:from-red-500/30 hover:to-red-600/30 px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-semibold tracking-wide">
                   <Diamond className="w-3 h-3 md:w-4 md:h-4 mr-2 md:mr-3" />
-                  LOREM IPSUM DOLOR SIT AMET
+                  THE SPORTS CAREER NETWORK
                 </Badge>
 
                 <h1 className="hero-title text-5xl sm:text-6xl md:text-7xl xl:text-8xl font-bold text-white leading-[1.1] tracking-tight">
-                  Lorem Ipsum
+                  Recruit. Showcase.
                   <span className="block bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent">
-                    Consectetur
+                    Get Signed.
                   </span>
                 </h1>
 
                 <p className="hero-subtitle text-lg md:text-2xl text-gray-300 leading-relaxed max-w-2xl font-light tracking-wide">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                  SportsIn connects ambitious players with verified recruiters, scouts & clubs. Build a dynamic profile, earn career badges, join or host tournaments, analyze performance data, and secure real offers—on one platform.
                 </p>
               </div>
 
@@ -462,17 +419,23 @@ export default function UltraPremiumLandingPage() {
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white text-base md:text-xl px-8 md:px-12 py-6 md:py-8 font-bold shadow-2xl border border-red-500/30 group"
+                  asChild
                 >
-                  <Play className="w-5 h-5 md:w-6 md:h-6 mr-3 md:mr-4 group-hover:scale-110 transition-transform" />
-                  Lorem Ipsum Dolor
+                  <a href="#platform">
+                    <Play className="w-5 h-5 md:w-6 md:h-6 mr-3 md:mr-4 group-hover:scale-110 transition-transform" />
+                    Explore Platform
+                  </a>
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
                   className="text-base md:text-xl px-8 md:px-12 py-6 md:py-8 border-2 border-gray-600 hover:border-red-500 text-gray-300 hover:text-red-400 bg-transparent hover:bg-gray-900/50 font-semibold group"
+                  asChild
                 >
-                  Consectetur Adipiscing
-                  <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-3 md:ml-4 group-hover:translate-x-1 transition-transform" />
+                  <a href="/sportsin-app.apk" download>
+                    Download App
+                    <ArrowRight className="w-5 h-5 md:w-6 md:h-6 ml-3 md:ml-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
                 </Button>
               </div>
 
@@ -481,19 +444,19 @@ export default function UltraPremiumLandingPage() {
                   <div className="text-2xl md:text-4xl font-bold text-white mb-1 md:mb-2">
                     <AnimatedCounter end={25000} suffix="+" />
                   </div>
-                  <div className="text-xs md:text-sm text-gray-400 font-medium tracking-wide">LOREM IPSUM</div>
+                  <div className="text-xs md:text-sm text-gray-400 font-medium tracking-wide">REGISTERED ATHLETES</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl md:text-4xl font-bold text-white mb-1 md:mb-2">
-                    <AnimatedCounter end={500} suffix="+" />
+                    <AnimatedCounter end={1800} suffix="+" />
                   </div>
-                  <div className="text-xs md:text-sm text-gray-400 font-medium tracking-wide">DOLOR SIT AMET</div>
+                  <div className="text-xs md:text-sm text-gray-400 font-medium tracking-wide">RECRUITERS & SCOUTS</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl md:text-4xl font-bold text-white mb-1 md:mb-2">
-                    <AnimatedCounter end={2.5} suffix="B+" prefix="$" decimals={1} />
+                    <AnimatedCounter end={2.5} suffix="M+" prefix="$" decimals={1} />
                   </div>
-                  <div className="text-xs md:text-sm text-gray-400 font-medium tracking-wide">CONSECTETUR ELIT</div>
+                  <div className="text-xs md:text-sm text-gray-400 font-medium tracking-wide">SCHOLARSHIP VALUE</div>
                 </div>
               </div>
             </div>
@@ -554,14 +517,13 @@ export default function UltraPremiumLandingPage() {
           <div className="text-center mb-16 md:mb-24">
             <Badge className="bg-gradient-to-r from-red-500/30 to-red-600/30 text-red-300 border-red-400/40 hover:bg-gradient-to-r hover:from-red-500/30 hover:to-red-600/30 mb-6 md:mb-8 px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-semibold tracking-wide">
               <Building className="w-3 h-3 md:w-4 md:h-4 mr-2 md:mr-3" />
-              LOREM IPSUM DOLOR SIT
+              PLATFORM CAPABILITIES
             </Badge>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 md:mb-8 tracking-tight">
-              Consectetur Adipiscing Elit
+              Everything You Need To Advance Your Sports Career
             </h2>
             <p className="text-lg md:text-2xl text-gray-300 max-w-5xl mx-auto font-light leading-relaxed tracking-wide">
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+              From intelligent talent matching and verified recruiter pipelines to tournament hosting, real‑time performance analytics and a gamified badge system—SportsIn centralizes athlete growth.
             </p>
           </div>
 
@@ -571,25 +533,20 @@ export default function UltraPremiumLandingPage() {
                 <div className="w-14 h-14 md:w-20 md:h-20 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl md:rounded-3xl flex items-center justify-center mb-6 md:mb-10 group-hover:scale-110 transition-transform shadow-2xl border border-red-400/30">
                   <BarChart3 className="w-7 h-7 md:w-10 md:h-10 text-white" />
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 tracking-tight">
-                  Lorem Ipsum Dolor
-                </h3>
-                <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 md:mb-8 font-light">
-                  Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-                </p>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 tracking-tight">Unified Player Profiles</h3>
+                <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 md:mb-8 font-light">Showcase stats, highlights, achievements, academic data & availability. Keep everything recruiters need—always up to date.</p>
                 <div className="space-y-3 md:space-y-4">
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Lorem ipsum dolor sit amet</span>
+                    <span>Video highlights & performance metrics</span>
                   </div>
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Consectetur adipiscing elit</span>
+                    <span>Academic & eligibility data</span>
                   </div>
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Sed do eiusmod tempor</span>
+                    <span>Availability & contract status</span>
                   </div>
                 </div>
               </CardContent>
@@ -600,25 +557,20 @@ export default function UltraPremiumLandingPage() {
                 <div className="w-14 h-14 md:w-20 md:h-20 bg-gradient-to-r from-red-600 to-red-700 rounded-2xl md:rounded-3xl flex items-center justify-center mb-6 md:mb-10 group-hover:scale-110 transition-transform shadow-2xl border border-red-500/30">
                   <Users className="w-7 h-7 md:w-10 md:h-10 text-white" />
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 tracking-tight">
-                  Consectetur Adipiscing
-                </h3>
-                <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 md:mb-8 font-light">
-                  Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure.
-                </p>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 tracking-tight">Intelligent Talent Match</h3>
+                <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 md:mb-8 font-light">Our matching engine surfaces the right athletes to the right recruiters based on role needs, position metrics, and trajectory signals.</p>
                 <div className="space-y-3 md:space-y-4">
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Duis aute irure dolor</span>
+                    <span>Role & position specific scoring</span>
                   </div>
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Reprehenderit in voluptate</span>
+                    <span>Trajectory & growth signals</span>
                   </div>
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Velit esse cillum dolore</span>
+                    <span>Smart recruiter filters</span>
                   </div>
                 </div>
               </CardContent>
@@ -629,25 +581,20 @@ export default function UltraPremiumLandingPage() {
                 <div className="w-14 h-14 md:w-20 md:h-20 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl md:rounded-3xl flex items-center justify-center mb-6 md:mb-10 group-hover:scale-110 transition-transform shadow-2xl border border-red-400/30">
                   <Shield className="w-7 h-7 md:w-10 md:h-10 text-white" />
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 tracking-tight">
-                  Sed Do Eiusmod
-                </h3>
-                <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 md:mb-8 font-light">
-                  Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 tracking-tight">Secure Offers & Communication</h3>
+                <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 md:mb-8 font-light">Encrypted recruiter chats, structured offer workflows, digital signing summaries and compliance‑friendly audit trails.</p>
                 <div className="space-y-3 md:space-y-4">
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Excepteur sint occaecat</span>
+                    <span>End‑to‑end encrypted chats</span>
                   </div>
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Cupidatat non proident</span>
+                    <span>Structured offer workflow</span>
                   </div>
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Sunt in culpa qui officia</span>
+                    <span>Compliance audit trail</span>
                   </div>
                 </div>
               </CardContent>
@@ -658,25 +605,20 @@ export default function UltraPremiumLandingPage() {
                 <div className="w-14 h-14 md:w-20 md:h-20 bg-gradient-to-r from-red-600 to-red-700 rounded-2xl md:rounded-3xl flex items-center justify-center mb-6 md:mb-10 group-hover:scale-110 transition-transform shadow-2xl border border-red-500/30">
                   <Calendar className="w-7 h-7 md:w-10 md:h-10 text-white" />
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 tracking-tight">
-                  Tempor Incididunt
-                </h3>
-                <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 md:mb-8 font-light">
-                  Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                  nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
-                </p>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 tracking-tight">Tournament Hosting & Management</h3>
+                <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 md:mb-8 font-light">Create public or invite‑only tournaments. Manage brackets, live scores, MVP voting and automated stat aggregation.</p>
                 <div className="space-y-3 md:space-y-4">
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Deserunt mollit anim</span>
+                    <span>Bracket & scheduling tools</span>
                   </div>
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Id est laborum et dolorum</span>
+                    <span>Live scoring + leaderboards</span>
                   </div>
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Fuga et harum quidem</span>
+                    <span>MVP & badge automation</span>
                   </div>
                 </div>
               </CardContent>
@@ -687,25 +629,20 @@ export default function UltraPremiumLandingPage() {
                 <div className="w-14 h-14 md:w-20 md:h-20 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl md:rounded-3xl flex items-center justify-center mb-6 md:mb-10 group-hover:scale-110 transition-transform shadow-2xl border border-red-400/30">
                   <TrendingUp className="w-7 h-7 md:w-10 md:h-10 text-white" />
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 tracking-tight">
-                  Ut Labore Dolore
-                </h3>
-                <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 md:mb-8 font-light">
-                  Magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat duis aute irure dolor in reprehenderit.
-                </p>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 tracking-tight">Career Badge System</h3>
+                <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 md:mb-8 font-light">Earn badges for milestones: verified profile, tournament MVP, seasonal performance tiers, academic excellence and signing achievements.</p>
                 <div className="space-y-3 md:space-y-4">
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Rerum facilis est et expedita</span>
+                    <span>Performance & consistency tiers</span>
                   </div>
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Distinctio nam libero tempore</span>
+                    <span>Academic achievement badges</span>
                   </div>
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Cum soluta nobis est eligendi</span>
+                    <span>MVP & signing milestones</span>
                   </div>
                 </div>
               </CardContent>
@@ -716,25 +653,20 @@ export default function UltraPremiumLandingPage() {
                 <div className="w-14 h-14 md:w-20 md:h-20 bg-gradient-to-r from-red-600 to-red-700 rounded-2xl md:rounded-3xl flex items-center justify-center mb-6 md:mb-10 group-hover:scale-110 transition-transform shadow-2xl border border-red-500/30">
                   <Globe className="w-7 h-7 md:w-10 md:h-10 text-white" />
                 </div>
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 tracking-tight">
-                  Magna Aliqua Enim
-                </h3>
-                <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 md:mb-8 font-light">
-                  Ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis
-                  aute irure dolor in reprehenderit in voluptate velit esse.
-                </p>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-4 md:mb-6 tracking-tight">Real-Time Performance Analytics</h3>
+                <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 md:mb-8 font-light">Track form trends, workload balance, progression curves and comparative benchmarking with position cohorts.</p>
                 <div className="space-y-3 md:space-y-4">
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Optio cumque nihil impedit</span>
+                    <span>Progression & trend charts</span>
                   </div>
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Quo minus id quod maxime</span>
+                    <span>Workload & load balance</span>
                   </div>
                   <div className="flex items-center text-sm md:text-base text-gray-400 font-medium">
                     <CheckCircle className="w-4 h-4 md:w-5 md:h-5 mr-2 md:mr-3 text-red-400 flex-shrink-0" />
-                    <span>Placeat facere possimus</span>
+                    <span>Cohort benchmarking</span>
                   </div>
                 </div>
               </CardContent>
@@ -755,20 +687,15 @@ export default function UltraPremiumLandingPage() {
             <div className="download-content space-y-8 md:space-y-10">
               <Badge className="bg-gradient-to-r from-red-500/30 to-red-600/30 text-red-300 border-red-400/40 hover:bg-gradient-to-r hover:from-red-500/30 hover:to-red-600/30 mb-4 px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-semibold tracking-wide">
                 <Download className="w-3 h-3 md:w-4 md:h-4 mr-2 md:mr-3" />
-                LOREM IPSUM DOWNLOAD
+                GET THE APP
               </Badge>
 
               <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight leading-tight">
-                Lorem Ipsum{" "}
-                <span className="bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent">
-                  Dolor Sit Amet
-                </span>{" "}
-                Consectetur
+                Own Your Journey. <span className="bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent">Anytime, Anywhere.</span>
               </h2>
 
               <p className="text-lg md:text-xl text-gray-300 font-light leading-relaxed">
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Record highlights, apply to openings, receive scout alerts, manage tournaments and unlock badges on the go. Available for Android (iOS coming soon).
               </p>
 
               <div className="space-y-4 md:space-y-6">
@@ -777,10 +704,8 @@ export default function UltraPremiumLandingPage() {
                     <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-red-500" />
                   </div>
                   <div>
-                    <h4 className="text-lg md:text-xl font-semibold text-white mb-1">Lorem Ipsum Dolor</h4>
-                    <p className="text-gray-400 font-light">
-                      Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-                    </p>
+                    <h4 className="text-lg md:text-xl font-semibold text-white mb-1">Instant Recruiter Alerts</h4>
+                    <p className="text-gray-400 font-light">Get notified when scouts view or shortlist your profile.</p>
                   </div>
                 </div>
 
@@ -789,10 +714,8 @@ export default function UltraPremiumLandingPage() {
                     <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-red-500" />
                   </div>
                   <div>
-                    <h4 className="text-lg md:text-xl font-semibold text-white mb-1">Sed Do Eiusmod</h4>
-                    <p className="text-gray-400 font-light">
-                      Tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
-                    </p>
+                    <h4 className="text-lg md:text-xl font-semibold text-white mb-1">Mobile Highlight Capture</h4>
+                    <p className="text-gray-400 font-light">Upload clips & tag stats right after the play happens.</p>
                   </div>
                 </div>
 
@@ -801,19 +724,17 @@ export default function UltraPremiumLandingPage() {
                     <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-red-500" />
                   </div>
                   <div>
-                    <h4 className="text-lg md:text-xl font-semibold text-white mb-1">Quis Nostrud Exercitation</h4>
-                    <p className="text-gray-400 font-light">
-                      Ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
-                    </p>
+                    <h4 className="text-lg md:text-xl font-semibold text-white mb-1">Tournament Control Center</h4>
+                    <p className="text-gray-400 font-light">Manage brackets, live scoring & MVP votes in real time.</p>
                   </div>
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <a href="#" className="download-badge block">
+                <a href="/sportsin-app.apk" download className="download-badge block">
                   <Image
                     src="/placeholder.svg?height=60&width=200"
-                    alt="Get it on Google Play"
+                    alt="Download SportsIn Android APK"
                     width={200}
                     height={60}
                     className="h-[60px] w-auto hover:opacity-90 transition-opacity"
@@ -822,10 +743,10 @@ export default function UltraPremiumLandingPage() {
                 <a href="#" className="download-badge block">
                   <Image
                     src="/placeholder.svg?height=60&width=200"
-                    alt="Download on the App Store"
+                    alt="App Store Coming Soon"
                     width={200}
                     height={60}
-                    className="h-[60px] w-auto hover:opacity-90 transition-opacity"
+                    className="h-[60px] w-auto opacity-60"
                   />
                 </a>
               </div>
@@ -836,8 +757,7 @@ export default function UltraPremiumLandingPage() {
                     <Star key={i} className="w-4 h-4 md:w-5 md:h-5 text-red-500 fill-current" />
                   ))}
                 </div>
-                <span className="text-white font-medium">4.9/5</span>
-                <span className="text-gray-400">• 10K+ Lorem Ipsum</span>
+                <span className="text-white font-medium">Early Access • Beta v1.0</span>
               </div>
             </div>
 
@@ -925,20 +845,15 @@ export default function UltraPremiumLandingPage() {
       </section>
 
       {/* Executive Testimonials Section */}
-      <section ref={testimonialsRef} className="py-24 md:py-40 bg-gradient-to-b from-black to-gray-950">
+      <section id="testimonials" ref={testimonialsRef} className="py-24 md:py-40 bg-gradient-to-b from-black to-gray-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 md:mb-24">
             <Badge className="bg-gradient-to-r from-red-500/30 to-red-600/30 text-red-300 border-red-400/40 hover:bg-gradient-to-r hover:from-red-500/30 hover:to-red-600/30 mb-6 md:mb-8 px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-semibold tracking-wide">
               <UserCheck className="w-3 h-3 md:w-4 md:h-4 mr-2 md:mr-3" />
-              LOREM IPSUM TESTIMONIALS
+              WHAT THE COMMUNITY SAYS
             </Badge>
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 md:mb-8 tracking-tight">
-              Consectetur Adipiscing Elit
-            </h2>
-            <p className="text-lg md:text-2xl text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-            </p>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 md:mb-8 tracking-tight">Trusted By Players & Recruiters</h2>
+            <p className="text-lg md:text-2xl text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">Real stories from athletes and talent evaluators using SportsIn to accelerate discovery, streamline recruiting and create opportunity.</p>
           </div>
 
           <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-10">
@@ -955,9 +870,9 @@ export default function UltraPremiumLandingPage() {
                     />
                   </div>
                   <div>
-                    <h4 className="text-lg md:text-xl font-bold text-white">Lorem Ipsum</h4>
-                    <p className="text-sm md:text-base text-gray-400 font-medium">Dolor Sit Amet, Consectetur</p>
-                    <p className="text-xs md:text-sm text-gray-500">Adipiscing Elit Sed Do</p>
+                    <h4 className="text-lg md:text-xl font-bold text-white">College Recruiter</h4>
+                    <p className="text-sm md:text-base text-gray-400 font-medium">NCAA Program</p>
+                    <p className="text-xs md:text-sm text-gray-500">Talent Acquisition Lead</p>
                     <div className="flex text-red-400 mt-1 md:mt-2">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="w-3 h-3 md:w-4 md:h-4 fill-current" />
@@ -965,10 +880,7 @@ export default function UltraPremiumLandingPage() {
                     </div>
                   </div>
                 </div>
-                <p className="text-base md:text-lg text-gray-300 italic leading-relaxed font-light">
-                  &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.&quot;
-                </p>
+                <p className="text-base md:text-lg text-gray-300 italic leading-relaxed font-light">"SportsIn cut my scouting cycle by weeks. Filtered dashboards + verified metrics = faster, better offers."</p>
               </CardContent>
             </Card>
 
@@ -985,9 +897,9 @@ export default function UltraPremiumLandingPage() {
                     />
                   </div>
                   <div>
-                    <h4 className="text-lg md:text-xl font-bold text-white">Consectetur Adipiscing</h4>
-                    <p className="text-sm md:text-base text-gray-400 font-medium">Sed Do Eiusmod, Tempor Inc</p>
-                    <p className="text-xs md:text-sm text-gray-500">Incididunt Ut Labore Et Dolore</p>
+                    <h4 className="text-lg md:text-xl font-bold text-white">Tournament Organizer</h4>
+                    <p className="text-sm md:text-base text-gray-400 font-medium">Regional Showcase</p>
+                    <p className="text-xs md:text-sm text-gray-500">Operations Director</p>
                     <div className="flex text-red-400 mt-1 md:mt-2">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="w-3 h-3 md:w-4 md:h-4 fill-current" />
@@ -995,10 +907,7 @@ export default function UltraPremiumLandingPage() {
                     </div>
                   </div>
                 </div>
-                <p className="text-base md:text-lg text-gray-300 italic leading-relaxed font-light">
-                  &quot;Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                  voluptate velit esse cillum dolore eu fugiat nulla pariatur.&quot;
-                </p>
+                <p className="text-base md:text-lg text-gray-300 italic leading-relaxed font-light">"I hosted a regional showcase in hours—automated brackets, live stats and MVP badge distribution worked flawlessly."</p>
               </CardContent>
             </Card>
 
@@ -1015,9 +924,9 @@ export default function UltraPremiumLandingPage() {
                     />
                   </div>
                   <div>
-                    <h4 className="text-lg md:text-xl font-bold text-white">Tempor Incididunt</h4>
-                    <p className="text-sm md:text-base text-gray-400 font-medium">Ut Labore & Dolore, Magna LLC</p>
-                    <p className="text-xs md:text-sm text-gray-500">Aliqua Ut Enim Ad Minim</p>
+                    <h4 className="text-lg md:text-xl font-bold text-white">Rising Athlete</h4>
+                    <p className="text-sm md:text-base text-gray-400 font-medium">High School Midfielder</p>
+                    <p className="text-xs md:text-sm text-gray-500">Class of 2026</p>
                     <div className="flex text-red-400 mt-1 md:mt-2">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="w-3 h-3 md:w-4 md:h-4 fill-current" />
@@ -1025,10 +934,7 @@ export default function UltraPremiumLandingPage() {
                     </div>
                   </div>
                 </div>
-                <p className="text-base md:text-lg text-gray-300 italic leading-relaxed font-light">
-                  &quot;Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                  laborum. Sed ut perspiciatis unde omnis iste natus error.&quot;
-                </p>
+                <p className="text-base md:text-lg text-gray-300 italic leading-relaxed font-light">"Badges gamified my grind. Coaches mentioned my Consistency & Academic badges in every call."</p>
               </CardContent>
             </Card>
           </div>
@@ -1037,6 +943,7 @@ export default function UltraPremiumLandingPage() {
 
       {/* Ultra-Premium Stats Section */}
       <section
+        id="impact"
         ref={statsRef}
         className="py-24 md:py-40 bg-gradient-to-r from-red-500/8 via-red-600/4 to-red-500/8 relative"
       >
@@ -1045,15 +952,10 @@ export default function UltraPremiumLandingPage() {
           <div className="text-center mb-16 md:mb-20">
             <Badge className="bg-gradient-to-r from-red-500/30 to-red-600/30 text-red-300 border-red-400/40 hover:bg-gradient-to-r hover:from-red-500/30 hover:to-red-600/30 mb-6 md:mb-8 px-4 md:px-6 py-2 md:py-4 text-xs md:text-sm font-semibold tracking-wide">
               <Award className="w-3 h-3 md:w-4 md:h-4 mr-2 md:mr-3" />
-              LOREM IPSUM METRICS
+              PLATFORM IMPACT
             </Badge>
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 md:mb-8 tracking-tight">
-              Consectetur Adipiscing Excellence
-            </h2>
-            <p className="text-lg md:text-2xl text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip.
-            </p>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 md:mb-8 tracking-tight">Proven Growth & Opportunity</h2>
+            <p className="text-lg md:text-2xl text-gray-300 max-w-4xl mx-auto font-light leading-relaxed">Meaningful traction and measurable outcomes for athletes, recruiters and organizers across the ecosystem.</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
@@ -1061,57 +963,54 @@ export default function UltraPremiumLandingPage() {
               <div className="text-3xl md:text-6xl font-bold text-white mb-2 md:mb-4 tabular-nums">
                 <AnimatedCounter end={25000} suffix="+" />
               </div>
-              <div className="text-base md:text-lg text-gray-300 font-semibold mb-1 md:mb-2">Lorem Ipsum</div>
-              <div className="text-xs md:text-sm text-gray-400 font-medium">Dolor Sit Amet</div>
+              <div className="text-base md:text-lg text-gray-300 font-semibold mb-1 md:mb-2">Scholarship Dollars Facilitated</div>
+              <div className="text-xs md:text-sm text-gray-400 font-medium">Value Created</div>
             </div>
             <div className="text-center p-6 md:p-12 bg-gradient-to-br from-gray-900/30 to-black/50 rounded-2xl md:rounded-3xl border border-gray-700/30 backdrop-blur-xl shadow-2xl">
               <div className="text-3xl md:text-6xl font-bold text-white mb-2 md:mb-4 tabular-nums">
-                <AnimatedCounter end={500} suffix="+" />
+                <AnimatedCounter end={1800} suffix="+" />
               </div>
-              <div className="text-base md:text-lg text-gray-300 font-semibold mb-1 md:mb-2">Consectetur Elit</div>
-              <div className="text-xs md:text-sm text-gray-400 font-medium">Sed Do Eiusmod</div>
+              <div className="text-base md:text-lg text-gray-300 font-semibold mb-1 md:mb-2">Verified Recruiter Network</div>
+              <div className="text-xs md:text-sm text-gray-400 font-medium">Colleges & Clubs</div>
             </div>
             <div className="text-center p-6 md:p-12 bg-gradient-to-br from-gray-900/30 to-black/50 rounded-2xl md:rounded-3xl border border-gray-700/30 backdrop-blur-xl shadow-2xl">
               <div className="text-3xl md:text-6xl font-bold text-white mb-2 md:mb-4 tabular-nums">
-                <AnimatedCounter end={2.5} suffix="B+" prefix="$" decimals={1} />
+                <AnimatedCounter end={120000} suffix="+" />
               </div>
-              <div className="text-base md:text-lg text-gray-300 font-semibold mb-1 md:mb-2">Tempor Incididunt</div>
-              <div className="text-xs md:text-sm text-gray-400 font-medium">Ut Labore Dolore</div>
+              <div className="text-base md:text-lg text-gray-300 font-semibold mb-1 md:mb-2">Tournament Matches Logged</div>
+              <div className="text-xs md:text-sm text-gray-400 font-medium">Across Events</div>
             </div>
             <div className="text-center p-6 md:p-12 bg-gradient-to-br from-gray-900/30 to-black/50 rounded-2xl md:rounded-3xl border border-gray-700/30 backdrop-blur-xl shadow-2xl">
               <div className="text-3xl md:text-6xl font-bold text-white mb-2 md:mb-4 tabular-nums">
-                <AnimatedCounter end={99.7} suffix="%" decimals={1} />
+                <AnimatedCounter end={93} suffix="%" />
               </div>
-              <div className="text-base md:text-lg text-gray-300 font-semibold mb-1 md:mb-2">Magna Aliqua</div>
-              <div className="text-xs md:text-sm text-gray-400 font-medium">Ut Enim Ad Minim</div>
+              <div className="text-base md:text-lg text-gray-300 font-semibold mb-1 md:mb-2">Offer Acceptance Confidence</div>
+              <div className="text-xs md:text-sm text-gray-400 font-medium">Athlete Self‑Reported</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Ultra-Premium CTA Section */}
-      <section ref={ctaRef} className="py-24 md:py-40 bg-gradient-to-b from-black to-gray-950 relative overflow-hidden">
+      <section id="join" ref={ctaRef} className="py-24 md:py-40 bg-gradient-to-b from-black to-gray-950 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-red-500/15 via-transparent to-transparent"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="ultra-premium-cta text-center max-w-3xl mx-auto">
             <Badge className="bg-gradient-to-r from-red-500/30 to-red-600/30 text-red-300 border-red-400/40 hover:bg-gradient-to-r hover:from-red-500/30 hover:to-red-600/30 mb-6 md:mb-8 px-4 md:px-6 py-2 md:py-3 text-xs md:text-sm font-semibold tracking-wide">
               <Crown className="w-3 h-3 md:w-4 md:h-4 mr-2 md:mr-3" />
-              ULTRA-PREMIUM CTA
+              READY TO LEVEL UP
             </Badge>
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 md:mb-8 tracking-tight">
-              Lorem Ipsum Dolor Sit Amet
-            </h2>
-            <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur
-              consectetur, nisl nisi consectetur nisi, euismod euismod nisi nisi euismod. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit.
-            </p>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 md:mb-8 tracking-tight">Build Your Sports Career On SportsIn</h2>
+            <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed mb-8">Create your profile, start earning badges, apply to openings and receive real recruiter interest. The earlier you join—the faster you advance.</p>
             <Button
               size="lg"
               className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white text-base md:text-xl px-8 md:px-12 py-6 md:py-8 font-bold shadow-2xl border border-red-500/30"
+              asChild
             >
-              <ArrowRight className="w-5 h-5 md:w-6 md:h-6 mr-3 md:mr-4" />
-              Lorem Ipsum CTA
+              <a href="/sportsin-app.apk" download>
+                <ArrowRight className="w-5 h-5 md:w-6 md:h-6 mr-3 md:mr-4" />
+                Download SportsIn
+              </a>
             </Button>
           </div>
         </div>
@@ -1128,10 +1027,11 @@ export default function UltraPremiumLandingPage() {
           </div>
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
             <nav className="flex space-x-6 text-sm md:text-base">
+              <a href="#home" className="hover:text-red-400 transition-colors">Home</a>
               <a href="#platform" className="hover:text-red-400 transition-colors">Platform</a>
-              <a href="#intelligence" className="hover:text-red-400 transition-colors">Intelligence</a>
+              <a href="#impact" className="hover:text-red-400 transition-colors">Impact</a>
+              <a href="#testimonials" className="hover:text-red-400 transition-colors">Testimonials</a>
               <a href="#download" className="hover:text-red-400 transition-colors">Download</a>
-              <a href="#advisory" className="hover:text-red-400 transition-colors">Advisory</a>
             </nav>
             <div className="text-xs md:text-sm text-gray-500 mt-2 md:mt-0">Contact: <a href="mailto:info@sportsin.com" className="hover:text-red-400 underline">info@sportsin.com</a></div>
           </div>
