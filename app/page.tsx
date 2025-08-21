@@ -466,7 +466,7 @@ export default function UltraPremiumLandingPage() {
                 <div className="w-[320px] md:w-[420px] h-[400px] md:h-[540px] mx-auto bg-gradient-to-br from-gray-800 to-black rounded-[3rem] md:rounded-[4rem] p-3 md:p-4 shadow-2xl border border-gray-700/30">
                   <div className="w-full h-full bg-gradient-to-br from-gray-100 to-white rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden relative shadow-inner">
                     <Image
-                      src="/placeholder.svg?height=540&width=420"
+                      src="/assets/sample_1.jpg"
                       alt="SportsIn Premium Interface"
                       width={420}
                       height={540}
@@ -768,7 +768,7 @@ export default function UltraPremiumLandingPage() {
                   <div className="w-[220px] h-[440px] bg-gradient-to-br from-gray-800 to-black rounded-[2rem] p-3 shadow-2xl border border-gray-700/30">
                     <div className="w-full h-full bg-gradient-to-br from-gray-100 to-white rounded-[1.7rem] overflow-hidden relative shadow-inner">
                       <Image
-                        src="/placeholder.svg?height=440&width=220"
+                        src="/assets/sample_2.jpg"
                         alt="SportsIn App Screen"
                         width={220}
                         height={440}
@@ -784,7 +784,7 @@ export default function UltraPremiumLandingPage() {
                   <div className="w-[240px] h-[480px] bg-gradient-to-br from-gray-800 to-black rounded-[2.5rem] p-3 shadow-2xl border border-gray-700/30">
                     <div className="w-full h-full bg-gradient-to-br from-gray-100 to-white rounded-[2.2rem] overflow-hidden relative shadow-inner">
                       <Image
-                        src="/placeholder.svg?height=480&width=240"
+                        src="/assets/sample_3.jpg"
                         alt="SportsIn App Screen"
                         width={240}
                         height={480}
@@ -862,11 +862,11 @@ export default function UltraPremiumLandingPage() {
                 <div className="flex flex-col sm:flex-row sm:items-center mb-6 md:mb-8">
                   <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl md:rounded-2xl bg-gradient-to-r from-red-500 to-red-600 flex items-center justify-center mb-4 sm:mb-0 sm:mr-6 shadow-xl">
                     <Image
-                      src="/placeholder.svg?height=80&width=80"
+                      src="/assets/pfp_1.avif"
                       alt="Lorem Ipsum"
                       width={80}
                       height={80}
-                      className="rounded-xl md:rounded-2xl"
+                      className="w-full h-full object-cover rounded-xl md:rounded-2xl"
                     />
                   </div>
                   <div>
@@ -889,11 +889,11 @@ export default function UltraPremiumLandingPage() {
                 <div className="flex flex-col sm:flex-row sm:items-center mb-6 md:mb-8">
                   <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl md:rounded-2xl bg-gradient-to-r from-red-600 to-red-700 flex items-center justify-center mb-4 sm:mb-0 sm:mr-6 shadow-xl">
                     <Image
-                      src="/placeholder.svg?height=80&width=80"
+                      src="/assets/pfp_1.avif"
                       alt="Consectetur Adipiscing"
                       width={80}
                       height={80}
-                      className="rounded-xl md:rounded-2xl"
+                      className="w-full h-full object-cover rounded-xl md:rounded-2xl"
                     />
                   </div>
                   <div>
@@ -916,11 +916,11 @@ export default function UltraPremiumLandingPage() {
                 <div className="flex flex-col sm:flex-row sm:items-center mb-6 md:mb-8">
                   <div className="w-16 h-16 md:w-20 md:h-20 rounded-xl md:rounded-2xl bg-gradient-to-r from-red-500 to-red-600 flex items-center justify-center mb-4 sm:mb-0 sm:mr-6 shadow-xl">
                     <Image
-                      src="/placeholder.svg?height=80&width=80"
+                      src="/assets/pfp_1.avif"
                       alt="Tempor Incididunt"
                       width={80}
                       height={80}
-                      className="rounded-xl md:rounded-2xl"
+                      className="w-full h-full object-cover rounded-xl md:rounded-2xl"
                     />
                   </div>
                   <div>
